@@ -12,15 +12,15 @@ BLOGGYFIRE
 </h1></Link>
 <div className="w-72 text-center h-[25px] mt-1.5 outline-none border-none outline-slate-300 hidden lg:flex rounded-2xl">
   <Search size={18} className="text-center ml-2 mt-[3px] text-gray-700"/>
-<input placeholder="Search the Blog title" className="outline-none pl-2 bg-transparent"/></div>
+<input placeholder="Search the Blog title" className="outline-none pl-2 bg-transparent text-teal-400"/></div>
 
 </div>
 <div className="lg:flex hidden mx-auto justify-center gap-x-8">
- <Link href="/" className ="hover:scale-125 duration-200 hover:font-bold "> <span className="text-md font-semibold text-slate-800 hover:text-blue-700">AI</span></Link>
- <Link href="/"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-slate-800 hover:text-blue-700">Agriculture</span></Link>
- <Link href="/"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-slate-800 hover:text-blue-700">Health Care</span></Link>
- <Link href="/"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-slate-800 hover:text-blue-700">All Blogs</span></Link>
- <Link href="/"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-slate-800 flex hover:text-blue-700"><SquarePen size={20} className="mr-1"/> Your Blogs</span></Link>
+ <Link href="/ai" className ="hover:scale-125 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 hover:text-blue-700">AI</span></Link>
+ <Link href="/agriculture"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 hover:text-blue-700">Agriculture</span></Link>
+ <Link href="/healthCare"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 hover:text-blue-700">Health Care</span></Link>
+ <Link href="/allBlogs"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 hover:text-blue-700">All Blogs</span></Link>
+ <Link href="/"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 flex hover:text-blue-700"><SquarePen size={20} className="mr-1"/> Your Blogs</span></Link>
 </div>
 <div  className="lg:hidden flex pt-4 pr-4">
   <HamburgerMenu/>

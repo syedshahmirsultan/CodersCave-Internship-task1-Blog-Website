@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const HomePageBlogs = ({blogData} :{blogData :AllBlogType}) => {
     return (
-        <div className="px-uto py-auto lg:py-20 lg:px-10 flex flex-col gap-10 min-w-full">
+        <div className="px-auto py-auto lg:py-20 lg:px-10 flex flex-col gap-10 min-w-full">
         {
             blogData.result.slice(0,5).map((post: SingleBlogType, index) => {
                 return (

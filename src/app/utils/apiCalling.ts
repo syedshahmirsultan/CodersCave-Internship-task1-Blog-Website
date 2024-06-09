@@ -42,3 +42,14 @@ export async function getHealthcareBlogs(){
 
     return res.json();
 }
+
+
+export async function searchBlogThroughTitle(search:string){
+    const data = await fetch(`https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2024-06-09/data/query/production?query=*%5B_type+%3D%3D+%27post%27+%26%26+title+match+%27${search}%27%5D%7B%0A++slug%2C%0A++++mainImage%2C%0A++++author-%3E%2C%0A++++description%2C%0A++++categories%5B%5D-%3E%2C%0A++++body%2C%0A++++title%0A%7D`)
+
+     if(!data.ok){
+        return "Error"
+     }
+
+     return data.json()
+}

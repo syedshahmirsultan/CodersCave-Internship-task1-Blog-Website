@@ -1,9 +1,13 @@
+"use client"
 import { Search, SquarePen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import HamburgerMenu from "./HamBurger";
+import {useState } from 'react'
 
 export default function NavBar() {
+  const [searchVal,setSearchVal] = useState("");
+
   return (
     <section className="flex h-20 top-0 sticky backdrop-blur-xl justify-between items-center z-20">
     <div className="flex gap-x-16" >
@@ -11,8 +15,11 @@ export default function NavBar() {
 BLOGGYFIRE
 </h1></Link>
 <div className="w-72 text-center h-[25px] mt-1.5 outline-none border-none outline-slate-300 hidden lg:flex rounded-2xl">
-  <Search size={18} className="text-center ml-2 mt-[3px] text-gray-700"/>
-<input placeholder="Search the Blog title" className="outline-none pl-2 bg-transparent text-teal-400"/></div>
+ <Link href={`/search?query=${searchVal}`}><Search size={18} className="text-center ml-2 mt-[3px] text-gray-700"/></Link>
+<input placeholder="Search the Blog title"
+value={searchVal}
+onChange={(e)=> setSearchVal(e.target.value)}
+className="outline-none pl-2 bg-transparent text-teal-400"/></div>
 
 </div>
 <div className="lg:flex hidden mx-auto justify-center gap-x-8">

@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const HamburgerMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchValue,setSearchValue] = useState("");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -21,10 +22,12 @@ const HamburgerMenu: React.FC = () => {
           <ul className="flex flex-col items-center space-y-2">
             <li className="mb-4 w-96 ml-12 text-center">
                 <div className="w-[75%] p-2 border mx-auto rounded-2xl flex gap-x-2 ">
-                <Search size={18} className="text-center ml-1 mt-[2px] text-gry-700"/>
+                <Link href={`/search?query=${searchValue}`}><Search size={18} className="text-center ml-1 mt-[2px] text-gry-700"/></Link>
               <input
                 type="text"
-                placeholder="Search..."
+                value={searchValue}
+                onChange={(e)=> setSearchValue(e.target.value)}
+                placeholder="Search the Blog Title..."
              className="outline-none" /></div>
             </li>
             <li className="w-96 ">

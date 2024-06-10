@@ -49,7 +49,7 @@ const HamburgerMenu: React.FC = () => {
             </li>
             <li className="w-96 ">
               <Link
-                href="/health-care"
+                href="/healthCare"
                 className="text-slate-700 hover:bg-gray-300 w-full p-4 rounded-lg block text-center"
               >
                 Health Care
@@ -57,7 +57,7 @@ const HamburgerMenu: React.FC = () => {
             </li>
             <li className="w-96 ">
               <Link
-                href="/all-blogs"
+                href="/allBlogs"
                 className="text-slate-700 hover:bg-gray-300 w-full p-4 rounded-lg block text-center"
               >
                 All Blogs

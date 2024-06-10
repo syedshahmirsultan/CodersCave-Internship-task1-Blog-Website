@@ -27,7 +27,7 @@ className="outline-none pl-2 bg-transparent text-teal-400"/></div>
  <Link href="/agriculture"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 hover:text-blue-700">Agriculture</span></Link>
  <Link href="/healthCare"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 hover:text-blue-700">Health Care</span></Link>
  <Link href="/allBlogs"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 hover:text-blue-700">All Blogs</span></Link>
- <Link href="/"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 flex hover:text-blue-700"><SquarePen size={20} className="mr-1"/> Your Blogs</span></Link>
+ <Link href="/writeYourBlogs"  className ="hover:scale-110 duration-200 hover:font-bold "> <span className="text-md font-semibold text-teal-400 flex hover:text-blue-700"><SquarePen size={20} className="mr-1"/> Your Blogs</span></Link>
 </div>
 <div  className="lg:hidden flex pt-4 pr-4">
   <HamburgerMenu/>

@@ -65,7 +65,7 @@ const HamburgerMenu: React.FC = () => {
             </li>
             <li className="w-96 ">
               <Link
-                href="/your-blogs"
+                href="/writeYourBlogs"
                 className="flex items-center justify-center text-slate-700 hover:bg-gray-300 w-full p-4 rounded-lg"
               >
                 <SquarePen size={20} className="mr-1" />

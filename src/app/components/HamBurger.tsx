@@ -19,16 +19,17 @@ const HamburgerMenu: React.FC = () => {
 
       {isOpen && (
         <div className="absolute top-10 right-0 bg-white p-6 pr-10 rounded-lg shadow-lg">
-          <ul className="flex flex-col items-center space-y-2">
+          <ul className="flex flex-col items-center justify-center space-y-2">
             <li className="mb-4 w-96 ml-12 text-center">
-                <div className="w-[75%] p-2 border mx-auto rounded-2xl flex gap-x-2 ">
-                <Link href={`/search?query=${searchValue}`}><Search size={18} className="text-center ml-1 mt-[2px] text-gry-700"/></Link>
+              <div className="w-full ml-8">
+                <div className="w-[75%] p-2 border mx-auto rounded-2xl flex gap-x-2">
+                <Link href={`/search?query=${searchValue}`}><Search size={18} className="text-center ml-1 mt-[2px] text-gray-700"/></Link>
               <input
                 type="text"
                 value={searchValue}
                 onChange={(e)=> setSearchValue(e.target.value)}
                 placeholder="Search the Blog Title..."
-             className="outline-none" /></div>
+             className="outline-none" /></div></div>
             </li>
             <li className="w-96 ">
               <Link

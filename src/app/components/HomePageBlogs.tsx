@@ -11,7 +11,7 @@ const HomePageBlogs = ({blogData} :{blogData :AllBlogType}) => {
             blogData.result.slice(0,5).map((post: SingleBlogType, index) => {
                 return (
                     // Use Next.js Link for client-side navigation
-                    <Link key={index} href="/">
+                    <Link key={index} href={`/brief/${post.slug.current}`}>                   
                         <div className="flex flex-col md:flex-row gap-10 bg-gray-100 rounded-md rounded-tr-md rounded-br-md hover:shadow-lg duration-200">
                             <div className='w-full md:w-3/5 group overflow-hidden rounded-tl-md rounded-bl-md relative'>
                                 {/* Use Next.js Image component for optimized image loading */}

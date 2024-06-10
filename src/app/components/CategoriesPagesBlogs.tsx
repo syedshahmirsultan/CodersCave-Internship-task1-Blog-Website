@@ -10,8 +10,8 @@ const CategoriesPagesBlogs = ({blogData} :{blogData :AllBlogType}) => {
         blogData.result.map((post: SingleBlogType, index:number) => {
             return (
                 // Use Next.js Link for client-side navigation
-                <Link key={index} href="/">
-                    <div className="flex flex-col md:flex-row gap-10 bg-gray-100 rounded-md rounded-tr-md rounded-br-md hover:shadow-lg duration-200">
+<Link key={index} href={`/brief/${post.slug.current}`}>                   
+ <div className="flex flex-col md:flex-row gap-10 bg-gray-100 rounded-md rounded-tr-md rounded-br-md hover:shadow-lg duration-200">
                         <div className='w-full md:w-3/5 group overflow-hidden rounded-tl-md rounded-bl-md relative'>
                             {/* Use Next.js Image component for optimized image loading */}
                             <Image src={urlForImage(post.mainImage.asset)} alt="Blog post Image" width={500} height={500}

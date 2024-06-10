@@ -67,7 +67,7 @@ export interface SingleBlogType {
         slug: singleBlogTypeSlug,
         mainImage: singleBlogTypeImage,
         author: singleBlogTypeAuthor,
-        description: singleBlogTypeDescription,
+        descriptionText: string,
         body:string,
         title:string
       }

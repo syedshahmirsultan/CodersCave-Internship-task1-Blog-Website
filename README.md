@@ -7,7 +7,7 @@ Welcome to the CodersCave Internship Task 1 repository! This project involves cr
 - [Next.js](https://nextjs.org/blog/next-14-2)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Lucide-Icons]((https://lucide.dev/icons/))
+- [Lucide-Icons](https://lucide.dev/icons/)
 - [Sanity](https://www.sanity.io/)
 - [Kinde](https://kinde.com/)
 

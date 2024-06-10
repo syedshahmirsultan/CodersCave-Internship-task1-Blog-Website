@@ -25,14 +25,12 @@ const SearchComponent = () => {
             setError(null);
             try {
                 const response = await searchBlogThroughTitle(searchValue);
-                console.log('Fetched data:', response); // Log data for debugging
                 if (response && response.result && response.result.length > 0) {
                     setBlogData(response as AllBlogType);
                 } else {
                     setBlogData(null);
                 }
             } catch (error) {
-                console.error("Failed to fetch products", error);
                 setError("Failed to fetch products. Please try again later.");
                 setBlogData(null);
             } finally {
@@ -52,7 +50,7 @@ const SearchComponent = () => {
     }
 
     if (!blogData || !blogData.result || blogData.result.length === 0) {
-        return <div className="mt-40 text-center mb-80 text-3xl lg:text-4xl font-bold ">No products found</div>;
+        return <div className="mt-40 text-center mb-80 text-3xl lg:text-4xl font-bold ">No blog found</div>;
     }
 
     return <CategoriesPagesBlogs blogData={blogData} />;
